@@ -6,7 +6,7 @@
 
 A powerful and user-friendly web application that leverages a Gradient Boosting Classifier to predict the risk of anemia based on key blood parameters. This project was developed as a comprehensive machine learning solution, from data analysis to model deployment, achieving **100% accuracy** on the test set.
 
-![Hero Image](assets/hero-image.png)
+![Hero Image](Desktop/Anaemia_Sense/assets/hero-image.png)
 
 ## Table of Contents
 - [Problem Statement](#problem-statement)
@@ -33,7 +33,7 @@ Anemia is a significant global health issue affecting millions. Early detection 
 ## System Architecture
 The project follows a standard machine learning workflow, from data preprocessing and model training to final prediction via a user interface.
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture Diagram](Desktop/Anaemia_Sense/assets/architecture.png)
 
 ## Tech Stack
 - **Backend**: Python, Flask

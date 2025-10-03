@@ -124,7 +124,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: url('rbcimage.jpeg') center/cover;
 }
 
 .hero::before {
@@ -134,8 +134,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/static/images/rbcimage.jpeg') center/cover;
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -145,7 +144,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.75), rgba(118, 75, 162, 0.75));
     z-index: 2;
 }
 

@@ -9,20 +9,20 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Anemia</div>
+            <div class="logo">Anemia Sense</div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="details.html">About</a></li>
-                <li><a href="result.html" class="active">Predict</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/details">About</a></li>
+                <li><a href="/result" class="active">Predict</a></li>
             </ul>
-            <a href="result.html" class="check-btn">Check</a>
+            <a href="/result" class="check-btn">Check Now</a>
         </div>
     </nav>
 
     <section class="result-hero">
+        <a href="/" class="back-to-home">← Back to Home</a>
         <div class="container">
-            <h1>Check Your Anemia Risk</h1>
+            <h1>Check Your Anaemia Risk</h1>
             <p>Enter your health parameters below for instant analysis</p>
         </div>
     </section>
@@ -93,11 +93,8 @@
     <section class="result-display" id="resultSection">
         <div class="container">
             <div class="result-card">
-                <div class="result-header">
-                    <h2>Result</h2>
-                </div>
+                <div class="result-icon">{{ result_icon }}</div>
                 <div class="result-content">
-                    <div class="result-icon">{{ result_icon }}</div>
                     <h3>{{ result_title }}</h3>
                     <p>{{ result_message }}</p>
                     <div class="result-advice">
@@ -116,13 +113,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p><strong>The Smart Bridge</strong></p>
-                    <p>Hyderabad, Telangana, India</p>
-                    <p><strong>Phone:</strong> +1 9999 154486 25</p>
-                    <p><strong>Email:</strong> info@example.com</p>
+                    <p><strong>Vrushabh Rajkumar Ghodke</strong></p>
+                    <p>Machine Learning Engineering Intern</p>
+                    <p><strong>Phone:</strong> +91 93091 51647</p>
+                    <p><strong>Email:</strong> ghodkevrushabh06@gmail.com</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Disclaimer</h3>
+                    <h3>Medical Disclaimer</h3>
                     <p>This prediction tool is for informational purposes only. Please consult a healthcare professional for proper medical diagnosis and treatment.</p>
                 </div>
             </div>
@@ -133,11 +130,12 @@
     </footer>
 
     <script>
-        function resetForm() {
-            document.getElementById('resultSection').style.display = 'none';
-            document.querySelector('.prediction-form').reset();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        // Smooth scroll to result section if it exists
+        {% if show_result %}
+        window.addEventListener('load', function() {
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+        {% endif %}
     </script>
 </body>
 </html>

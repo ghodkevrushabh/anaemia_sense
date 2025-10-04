@@ -16,9 +16,8 @@ A powerful and user-friendly web application that leverages a Gradient Boosting 
 - [Dataset](#dataset)
 - [Getting Started](#getting-started)
 - [How to Use the Model](#how-to-use-the-model)
-- [Contributing](#contributing)
-- [License](#license)
 
+  
 ## Problem Statement
 Anemia is a significant global health issue affecting millions. Early detection is crucial for timely and effective treatment. This project aims to build a reliable predictive tool that can assist in the preliminary screening of anemia by analyzing standard blood test results, making the process faster and more accessible.
 
